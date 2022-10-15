@@ -12,6 +12,8 @@ dwm_alsa () {
     if [ "$IDENTIFIER" = "unicode" ]; then
         if [ "$VOL" -eq 0 ]; then
             printf "婢"
+        elif [ "$VOL" = "" ]; then
+            printf "婢 "
         elif [ "$VOL" -gt 0 ] && [ "$VOL" -le 33 ]; then
             printf "奔 %s%%" "$VOL"
         elif [ "$VOL" -gt 33 ] && [ "$VOL" -le 66 ]; then

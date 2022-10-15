@@ -65,9 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-  { run_command,            "%s | ",            "/home/zzl/github/slstatus/script/dwm_network.sh"},
-  { ram_perc,            "RAM %s% | ",            NULL},
+  { run_command,            "| %s | ",            "/home/zzl/github/slstatus/script/dwm_network.sh"},
+  { ram_perc,            "閭 %s% | ",            NULL},
   { run_command,            "%s | ",            "/home/zzl/github/slstatus/script/dwm_alsa.sh"},
-	{ datetime, "%s",           "%F %T | " },
+	{ datetime, "%s",           " %F %T | " },
   { run_command,            "%s ",            "/home/zzl/github/slstatus/script/dwm_battery.sh"},
 };
